@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhandapani S | Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #0c0c0e;
+        }
+        .custom-red {
+            background-color: #e50914;
+        }
+        .text-custom-red {
+            color: #e50914;
+        }
+        .border-custom-red {
+            border-color: #e50914;
+        }
+    </style>
+</head>
+<body class="text-white overflow-x-hidden">
+
+    <!-- NAVIGATION BAR -->
+    <nav class="fixed top-0 left-0 w-full z-50 bg-[#e50914] text-white px-6 md:px-12 py-4 flex justify-between items-center shadow-lg transition-all duration-300">
+        <div class="text-2xl font-extrabold tracking-tight">
+            Dhandapani S
+        </div>
+        <div class="hidden md:flex space-x-8 font-medium">
+            <a href="#home" class="hover:opacity-80 transition-opacity">Home</a>
+            <a href="#about" class="hover:opacity-80 transition-opacity">About</a>
+            <a href="#skills" class="hover:opacity-80 transition-opacity">Skills</a>
+            <a href="#projects" class="hover:opacity-80 transition-opacity">Projects</a>
+            <a href="#contact" class="hover:opacity-80 transition-opacity">Contact</a>
+        </div>
+        <div>
+            <a href="#contact" class="bg-white text-[#e50914] px-5 py-2 rounded-full font-bold shadow-md hover:bg-gray-100 transition-all text-sm">
+                Hire Me
+            </a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION (Premium Red Screen Layout) -->
+    <section id="home" class="min-h-screen bg-[#e50914] pt-24 flex flex-col justify-center relative px-6 md:px-20 lg:px-32">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center w-full">
+            <div class="lg:col-span-7 space-y-6">
+                <h1 class="text-4xl md:text-6xl font-black tracking-tight leading-none text-white">
+                    Hi, I'm a <br><span class="opacity-90">Full Stack Developer</span>
+                </h1>
+                <p class="text-lg md:text-xl text-white/90 max-w-2xl font-medium leading-relaxed">
+                    I build fast, scalable, and modern full-stack web applications. Specializing in Python, HTML/CSS, and Generative AI to map out high-performing digital solutions.
+                </p>
+                <div class="flex flex-wrap gap-4 pt-4">
+                    <a href="#projects" class="bg-white text-[#e50914] px-8 py-3.5 rounded-md font-bold shadow-lg hover:scale-105 transition-transform">
+                        View My Work
+                    </a>
+                    <a href="#contact" class="border-2 border-white text-white px-8 py-3.5 rounded-md font-bold hover:bg-white hover:text-[#e50914] transition-all">
+                        Contact Me
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Graphic Avatar Placeholder Frame (as shown in the video layout) -->
+            <div class="lg:col-span-5 flex justify-center relative">
+                <div class="w-72 h-72 md:w-96 md:h-96 rounded-full border-4 border-white/20 overflow-hidden bg-white/10 flex items-center justify-center relative shadow-2xl">
+                    <!-- Replace Icon with portrait img when deploying -->
+                    <!-- <i class="fa-solid fa-code text-white/30 text-9xl animate-pulse"></i> -->
+                     <img src="./assets/WhatsApp Image 2026-06-08 at 1.14.14 PM.jpeg" alt="" class="w-96 h-96 md:w-96 md:h-96 rounded-full object-cover">
+                    <div class="absolute bottom-6 bg-black/40 backdrop-blur-md px-4 py-1.5 rounded-full border border-white/20 text-xs tracking-wider uppercase font-semibold">
+                        ⚡ Innovation Driven
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce hidden md:block">
+            <a href="#about"><i class="fa-solid fa-chevron-down text-white text-2xl"></i></a>
+        </div>
+    </section>
+
+    <!-- WORK PROCESS SECTION (White Backdrop & Structured Workflow Cards) -->
+    <section id="about" class="py-24 bg-white text-gray-900 px-6 md:px-20 lg:px-32">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <h2 class="text-3xl md:text-5xl font-black tracking-tight mb-4">
+                Let us show you how we drive your projects to new heights
+            </h2>
+            <p class="text-gray-500 font-medium">
+                We follow a structured, creative, and highly technical approach to turn your core ideas into robust deployment-ready full stack applications.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Card 01: Core Logic Architecture -->
+            <div class="bg-gray-50 border border-gray-100 p-8 rounded-2xl relative shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group">
+                <div class="text-5xl font-black text-gray-200 absolute top-4 right-6 group-hover:text-red-100 transition-colors">01</div>
+                <div class="w-12 h-12 rounded-xl bg-red-50 flex items-center justify-center mb-6">
+                    <i class="fa-solid fa-brain text-[#e50914] text-xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Logic & Strategy</h3>
+                <p class="text-gray-600 text-sm leading-relaxed">
+                    Actively building a strong foundation in Data Structures and Algorithms through rigorous problem solving on LeetCode. Focused on clean code mechanics and algorithmic optimization.
+                </p>
+            </div>
+
+            <!-- Card 02: Interface Engineering -->
+            <div class="bg-gray-50 border border-gray-100 p-8 rounded-2xl relative shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group">
+                <div class="text-5xl font-black text-gray-200 absolute top-4 right-6 group-hover:text-red-100 transition-colors">02</div>
+                <div class="w-12 h-12 rounded-xl bg-red-50 flex items-center justify-center mb-6">
+                    <i class="fa-solid fa-bezier-curve text-[#e50914] text-xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">UI/UX Interface Design</h3>
+                <p class="text-gray-600 text-sm leading-relaxed">
+                    Certified UI/UX Professional from Sunstone School of Technology. Crafting responsive layouts using structural HTML/CSS ensuring exceptional interactive layouts.
+                </p>
+            </div>
+
+            <!-- Card 03: Deployment & AI Mechanics -->
+            <div class="bg-gray-50 border border-gray-100 p-8 rounded-2xl relative shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group">
+                <div class="text-5xl font-black text-gray-200 absolute top-4 right-6 group-hover:text-red-100 transition-colors">03</div>
+                <div class="w-12 h-12 rounded-xl bg-red-50 flex items-center justify-center mb-6">
+                    <i class="fa-solid fa-robot text-[#e50914] text-xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Build & AI Engineering</h3>
+                <p class="text-gray-600 text-sm leading-relaxed">
+                    Integrating Python backend infrastructure with Generative AI and Large Language Models to build modern automation frameworks and high-utility data tooling.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CORE TECH STACK SCREEN -->
+    <section id="skills" class="py-20 bg-[#111114] border-t border-gray-800 px-6 md:px-20 lg:px-32">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex flex-col md:flex-row md:items-center justify-between mb-12 gap-4">
+                <div>
+                    <span class="text-xs font-bold uppercase tracking-widest text-[#e50914]">Technical Expertise</span>
+                    <h2 class="text-3xl md:text-4xl font-extrabold mt-1">Acquired Skills & Frameworks</h2>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+                <div class="bg-[#18181c] p-6 rounded-xl border border-gray-800/60 flex items-center space-x-4">
+                    <i class="fa-brands fa-python text-yellow-400 text-3xl"></i>
+                    <div><p class="font-bold">Python</p><span class="text-xs text-gray-500">Backend Logic</span> </div>
+                </div>
+                <div class="bg-[#18181c] p-6 rounded-xl border border-gray-800/60 flex items-center space-x-4">
+                    <i class="fa-brands fa-html5 text-orange-500 text-3xl"></i>
+                    <div><p class="font-bold">HTML / CSS</p><span class="text-xs text-gray-500">Frontend Foundation</span> </div>
+                </div>
+                <div class="bg-[#18181c] p-6 rounded-xl border border-gray-800/60 flex items-center space-x-4">
+                    <i class="fa-solid fa-database text-blue-400 text-3xl"></i>
+                    <div><p class="font-bold">MySQL & SQL</p><span class="text-xs text-gray-500">Database Core</span> </div>
+                </div>
+                <div class="bg-[#18181c] p-6 rounded-xl border border-gray-800/60 flex items-center space-x-4">
+                    <i class="fa-solid fa-microchip text-purple-400 text-3xl"></i>
+                    <div><p class="font-bold">Generative AI / LLMs</p><span class="text-xs text-gray-500">Integration</span> </div>
+                </div>
+            </div>
+
+            <!-- Certifications Sub-Grid -->
+            <div class="mt-12">
+                <h3 class="text-xl font-bold mb-6 text-gray-300">Verified Certifications</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="bg-[#18181c] p-4 rounded-xl border border-gray-800 flex items-center justify-between">
+                        <div>
+                            <p class="font-semibold text-sm text-white">Cursor AI: VibeCode Mastery</p>
+                            <p class="text-xs text-gray-500">Sunstone School of Technology</p>
+                        </div>
+                        <span class="text-xs bg-red-500/10 text-[#e50914] px-2.5 py-1 rounded font-medium">Feb 2026</span> 
+                    </div>
+                    <div class="bg-[#18181c] p-4 rounded-xl border border-gray-800 flex items-center justify-between">
+                        <div>
+                            <p class="font-semibold text-sm text-white">Python Full Stack Certification</p>
+                            <p class="text-xs text-gray-500">PYspiders (Django, SQL)</p>
+                        </div>
+                        <span class="text-xs bg-red-500/10 text-[#e50914] px-2.5 py-1 rounded font-medium">Jul 2025</span> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS SHOWCASE (Dark Terminal / Code-Editor Split Layout) -->
+    <section id="projects" class="py-24 bg-[#0c0c0e] px-6 md:px-20 lg:px-32">
+        <div class="max-w-6xl mx-auto mb-12">
+            <span class="text-xs font-bold uppercase tracking-widest text-[#e50914]">Interactive Demonstrations</span>
+            <h2 class="text-3xl md:text-5xl font-black tracking-tight mt-1">Featured Production Code</h2>
+        </div>
+
+        <!-- Interactive Split Screen Viewport Container -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch max-w-6xl mx-auto">
+            
+            <!-- Left Panel: Interactive Application UI Preview -->
+            <div class="lg:col-span-5 bg-gradient-to-br from-[#1c1c22] to-[#141417] p-8 rounded-3xl border border-gray-800 flex flex-col justify-between shadow-2xl relative overflow-hidden">
+                <div class="space-y-4">
+                    <div class="flex space-x-2">
+                        <span class="bg-red-500/10 text-[#e50914] text-xs px-3 py-1 rounded-full font-semibold">Generative AI</span> 
+                        <span class="bg-yellow-500/10 text-yellow-400 text-xs px-3 py-1 rounded-full font-semibold">Python</span> 
+                    </div>
+                    <h3 class="text-2xl font-black tracking-tight text-white">Career Advisor AI</h3> 
+                    <p class="text-sm text-gray-400 leading-relaxed">
+                        Developed an interactive GenAI Career Advisor providing personalized, real-time professional guidance . Leveraging localized large language model interfaces, the application processes targeted user background prompts to build comprehensive tailored career roadmaps and explicit technology skill tracking recommendations .
+                    </p>
+                </div>
+                
+                <div class="pt-8 flex space-x-4">
+                    <a href="https://github.com/dhandapani73975/Project1_PromptEngineering" target="_blank" class="flex-1 bg-white text-black text-center font-bold py-3 rounded-xl hover:bg-gray-200 transition-colors text-sm">
+                        <i class="fa-brands fa-github mr-2"></i> Repository 
+                    </a>
+                    <a href="https://dhanda-chatbot.streamlit.app/" target="_blank" class="flex-1 border border-gray-700 text-white text-center font-bold py-3 rounded-xl hover:bg-gray-800 transition-colors text-sm">
+                        <i class="fa-solid fa-arrow-up-right-from-square mr-2"></i> Live Demo 
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Panel: The Code View Window (as featured directly in the video) -->
+            <div class="lg:col-span-7 bg-[#141416] border border-gray-800 rounded-3xl overflow-hidden shadow-2xl flex flex-col">
+                <!-- Mac-Style Window Chrome Header Bar -->
+                <div class="bg-[#1c1c1f] px-6 py-4 border-b border-gray-800/80 flex justify-between items-center">
+                    <div class="flex space-x-2">
+                        <span class="w-3 h-3 rounded-full bg-red-500 inline-block"></span>
+                        <span class="w-3 h-3 rounded-full bg-yellow-500 inline-block"></span>
+                        <span class="w-3 h-3 rounded-full bg-green-500 inline-block"></span>
+                    </div>
+                    <span class="text-xs text-gray-500 font-mono tracking-tight">career_advisor_bot.py</span>
+                </div>
+                <!-- IDE Environment Code View Block -->
+                <div class="p-6 font-mono text-xs md:text-sm text-gray-400 leading-relaxed overflow-x-auto flex-1 bg-[#0e0e10]">
+                    <p><span class="text-purple-400">import</span> openai </p>
+                    <p><span class="text-purple-400">import</span> mysql.connector </p>
+                    <br>
+                    <p class="text-gray-500"># Analyze context inputs dynamically</p>
+                    <p><span class="text-blue-400">def</span> <span class="text-yellow-400">generate_career_roadmap</span>(user_input, skills_profile):</p>
+                    <p class="pl-4">prompt_query = <span class="text-green-300">f"Generate tailored roadmap for {user_input}"</span> </p>
+                    <p class="pl-4">response = openai.ChatCompletion.create(</p>
+                    <p class="pl-8">model=<span class="text-green-300">"gpt-4-turbo"</span>,</p>
+                    <p class="pl-8">messages=[{<span class="text-green-300">"role"</span>: <span class="text-green-300">"user"</span>, <span class="text-green-300">"content"</span>: prompt_query}]</p>
+                    <p class="pl-4">)</p>
+                    <p class="pl-4"><span class="text-purple-400">return</span> response.choices[<span class="text-xl text-red-500 font-bold">0</span>].message.content </p>
+                    <br>
+                    <p class="text-gray-500"># System output interface active</p>
+                    <p><span class="text-emerald-400">print</span>(<span class="text-green-300">"--- GenAI Career Advisor Engine Deployment Online ---"</span>) </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER / CONTACT FORM SECTION (The Premium Solid Red Footer Screen) -->
+    <section id="contact" class="bg-[#e50914] text-white py-24 px-6 md:px-20 lg:px-32 relative">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+            
+            <!-- Left Info Panel Grid -->
+            <div class="lg:col-span-5 space-y-8">
+                <div>
+                    <h2 class="text-4xl md:text-5xl font-black tracking-tight mb-4">Let's Connect</h2>
+                    <p class="text-white/80 font-medium">
+                        Open for entry-level engineering roles, collaboration projects, or technical consulting. Drop a message!
+                    </p>
+                </div>
+
+                <div class="space-y-4 font-medium text-lg">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center">
+                            <i class="fa-solid fa-envelope text-white"></i>
+                        </div>
+                        <span class="text-sm md:text-base">dhandapani73975@gmail.com</span> 
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <div class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center">
+                            <i class="fa-solid fa-phone text-white"></i>
+                        </div>
+                        <span class="text-sm md:text-base">+91 6382283258,&ensp; +91&ensp; 9176182816</span> 
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <div class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center">
+                            <i class="fa-solid fa-location-dot text-white"></i>
+                        </div>
+                        <span class="text-sm md:text-base">Chennai, Tamil Nadu, India</span> 
+                    </div>
+                </div>
+
+                <!-- Structural Academic Frame Block -->
+                <div class="bg-black/10 border border-white/20 p-6 rounded-2xl space-y-2">
+                    <p class="text-xs uppercase tracking-widest text-white/60 font-bold">Academic Base</p>
+                    <p class="font-bold text-lg">Master of Computer Applications (MCA)</p> 
+                    <p class="text-sm text-white/80">Hindustan College Of Arts & Science (2025 - 2027)</p> 
+                </div>
+
+                <div class="flex space-x-4 text-2xl pt-4">
+                    <a href="https://github.com/dhandapani73975" target="_blank" class="hover:opacity-80 transition-opacity"><i class="fa-brands fa-github"></i></a> 
+                    <a href="https://www.linkedin.com/in/dhandapani-s-56936735b" target="_blank" class="hover:opacity-80 transition-opacity"><i class="fa-brands fa-linkedin"></i></a> 
+                </div>
+            </div>
+
+            <!-- Right Interactive Form Panel -->
+            <div class="lg:col-span-7 w-full">
+                <form class="space-y-6 bg-black/10 border border-white/10 p-8 md:p-10 rounded-3xl backdrop-blur-md">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div class="flex flex-col space-y-2">
+                            <label class="text-xs uppercase font-bold tracking-wider text-white/80">First Name</label>
+                            <input type="text" class="w-full bg-white text-gray-900 px-4 py-3 rounded-xl focus:outline-none focus:ring-4 focus:ring-white/20 font-medium" placeholder="First Name" required>
+                        </div>
+                        <div class="flex flex-col space-y-2">
+                            <label class="text-xs uppercase font-bold tracking-wider text-white/80">Last Name</label>
+                            <input type="text" class="w-full bg-white text-gray-900 px-4 py-3 rounded-xl focus:outline-none focus:ring-4 focus:ring-white/20 font-medium" placeholder="Last Name" required>
+                        </div>
+                    </div>
+                    <div class="flex flex-col space-y-2">
+                        <label class="text-xs uppercase font-bold tracking-wider text-white/80">Email Address</label>
+                        <input type="email" class="w-full bg-white text-gray-900 px-4 py-3 rounded-xl focus:outline-none focus:ring-4 focus:ring-white/20 font-medium" placeholder="yourname@email.com" required>
+                    </div>
+                    <div class="flex flex-col space-y-2">
+                        <label class="text-xs uppercase font-bold tracking-wider text-white/80">Message</label>
+                        <textarea rows="4" class="w-full bg-white text-gray-900 px-4 py-3 rounded-xl focus:outline-none focus:ring-4 focus:ring-white/20 font-medium resize-none" placeholder="Type your message here..." required></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-white text-[#e50914] font-black tracking-wide uppercase py-4 rounded-xl shadow-xl hover:bg-gray-100 transition-all cursor-pointer">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <div class="mt-20 pt-8 border-t border-white/10 text-center text-sm text-white/60 font-medium">
+            &copy; 2026 Dhandapani S. Built exactly to design criteria. All Rights Reserved. 
+        </div>
+    </section>
+
+</body>
+</html>
